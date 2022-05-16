@@ -4,30 +4,29 @@ project:
 book:
   title: "QGIS для пожарных подразделений"
   author: "ФИО"
-  date: "05/16/2022"
+  date: today
   chapters:
     - index.qmd
     - intro.qmd
     - gis_in_fire_service.qmd
     - part: about_qgis.qmd
       chapters: 
-        - qgis_basics.qmd
-        - qgis_install.qmd
-        - qgis_layers.qmd
-        - qgis_importexport.qmd
+        - about_qgis/qgis_basics.qmd
+        - about_qgis/qgis_install.qmd
+        - about_qgis/qgis_layers.qmd
+        - about_qgis/qgis_importexport.qmd
     - part: fire_main.qmd
       chapters: 
-        - fm_inppw.qmd
-        - fm_inppw_planshets.qmd
-        - fm_ride_maps.qmd
+        - fire_main/fm_inppw.qmd
+        - fire_main/fm_inppw_planshets.qmd
+        - fire_main/fm_ride_maps.qmd
     - part: garrysons.qmd
       chapters: 
-        - garry_map.qmd
-        - garry_borders.qmd
-        - garry_analize.qmd
+        - garrysons/garry_map.qmd
+        - garrysons/garry_borders.qmd
+        - garrysons/garry_analize.qmd
     - summary.qmd
     - references.qmd
-
 
 bibliography: references.bib
 
