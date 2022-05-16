@@ -1,0 +1,11 @@
+{
+  "hash": "629b48ae78489120070cbe5c7dfa4eaa",
+  "result": {
+    "markdown": "---\ntitle: Добро пожаловать в блог!\nauthor: Малютин О.С.\ndate: '2022-05-13'\ncategories:\n  - news\n---\n\nВсем привет 123!!!\n\n![](thumbnail.jpg)\n\nSince this post doesn't specify an explicit `image`, the first image in the post will be used in the listing page of posts.\n\n```{.python}\nprint(pow(4,3))\n```\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
