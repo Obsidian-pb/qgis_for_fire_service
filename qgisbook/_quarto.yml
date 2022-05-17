@@ -28,13 +28,11 @@ book:
     - summary.qmd
     - references.qmd
 
-bibliography: references.bib
-
 format:
   html:
     theme: cosmo
-  pdf:
-    documentclass: scrreprt
+
 
 lang: ru
 
+bibliography: references.bib
