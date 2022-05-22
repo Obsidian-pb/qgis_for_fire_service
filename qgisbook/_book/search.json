@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "QGIS для пожарных подразделений",
     "section": "",
-    "text": "Написано при помощи публикационной системы Quarto book https://quarto.org/docs/books."
+    "text": "Написано при помощи публикационной системы Quarto book https://quarto.org/docs/books версия 0.9.440."
   },
   {
     "objectID": "intro.html",
@@ -12,5 +12,26 @@
     "title": "Вступление",
     "section": "",
     "text": "Ссылка Knuth (1984)\n\n\n\n\nKnuth, Donald E. 1984. «Literate Programming». Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "fire_main.html",
+    "href": "fire_main.html",
+    "title": "Реализация основных задач пожарных подразделений",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. «Literate Programming». Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "Ссылки",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "12  Заключение",
+    "section": "",
+    "text": "Заключение по итогам написания книги."
   }
 ]
