@@ -25,6 +25,9 @@ book:
         - garrysons/garry_map.qmd
         - garrysons/garry_borders.qmd
         - garrysons/garry_analize.qmd
+    - part: automation.qmd
+      chapters: 
+        - automation/download_OSM_by_osmnx.qmd
     - summary.qmd
     - references.qmd
 

@@ -4,14 +4,14 @@
     "href": "index.html",
     "title": "QGIS для пожарных подразделений",
     "section": "",
-    "text": "Написано при помощи публикационной системы Quarto book https://quarto.org/docs/books версия 0.9.440."
+    "text": "Написано при помощи публикационной системы Quarto book https://quarto.org/docs/books версия\n?env:quarto"
   },
   {
     "objectID": "intro.html",
     "href": "intro.html",
     "title": "Вступление",
     "section": "",
-    "text": "Ссылка Knuth (1984)\n\n\n\n\nKnuth, Donald E. 1984. «Literate Programming». Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+    "text": "Ссылка (Knuth 1984)\n\n\n\n\nKnuth, Donald E. 1984. «Literate Programming». Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
   },
   {
     "objectID": "fire_main.html",
