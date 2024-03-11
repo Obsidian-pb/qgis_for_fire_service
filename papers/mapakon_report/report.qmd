@@ -1,0 +1,88 @@
+---
+title: "Куда ведет кривая..."
+subtitle: "...или первые шаги ГИС и геоаналитики в пожарной безопасности"
+author: Малютин Олег Сергеевич
+institute: ФГБОУ ВО Сибирская пожарно-спасательная академия ГПС МЧС России
+date: "2023-04-07"
+# image: "images/clusters_v7_2016_2020.png"
+categories: [пожарная охрана, информационные технологии, пространственный анализ, ГИС]
+lang: ru
+
+format:
+  revealjs:
+    transition: slide
+    background-transition: fade
+
+# format: pptx
+
+number-sections: true  
+
+crossref:
+  fig-prefix: рис.      # (default is "Figure")
+  tbl-prefix: табл.     # (default is "Table")
+  title-delim: " --"
+
+# csl: G:/GitRepositories/_Dislocation/my_dissertation/book/gost-r-7-0-5-2008-numeric.csl
+# bibliography: "G:/GitRepositories/_Dislocation/my_dissertation/book/references.bib"
+
+# csl: C:/temp/book/gost-r-7-0-5-2008-numeric.csl
+# # csl: D:/Git/disserBD/book/gost-r-7-0-5-2008-numeric-alphabetical.csl
+# bibliography: C:/temp/book/references.bib
+
+language:
+  title-block-affiliation-single: "Организация"
+  section-title-references: "Список литературы"
+  section-title-abstract: "Аннотация для сайта"
+
+# quarto preview report.qmd --to revealjs
+---
+
+# О нас
+
+## Об академии
+
+Сибирская пожарно-спасательная академия ГПС МЧС России
+
+## О себе
+
+Отдел ИТиКМ
+
+Здесь красивая картинка академии и некоторых наших работ
+
+## Кафедра ВМиИТ
+
+Здесь фото ЕН и СВ и пара красивых картинок от них
+
+
+
+
+
+# О предметной области
+
+## О пожарной охране
+
+
+
+
+
+# Оперативная деятельность
+
+
+
+
+
+# Задачи системы управления
+
+
+
+
+
+# Научные задачи
+
+
+
+
+
+# Проблемы
+
+
