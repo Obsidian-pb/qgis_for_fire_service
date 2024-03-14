@@ -12,6 +12,7 @@ format:
   revealjs:
     transition: slide
     background-transition: fade
+    theme: serif
 
 # format: pptx
 
@@ -117,7 +118,6 @@ language:
 # О предметной области {background-color="black" background-image="imgs/fire_service.jpg" background-size="100%"}
 
 ## О пожарной охране
-
 Пожарная охрана России - крупнейшая структура МЧС России включающая 24 тыс. подразделений.
 
 Ежедневно:
@@ -125,7 +125,19 @@ language:
 - на дежурство заступает 90 тыс.человек и 40 тыс. единиц пожарной техники
 - происходит свыше 600 пожаров.
 
+## Деятельность пожарной охраны 
 
+<!-- :::{.column-page}
+![](imgs/collage.png)
+::: -->
+
+За 2023 год (ориентировочно):
+
+::: {.incremental}
+- произошло 350 тыс. пожаров
+- погибло порядка 7 тыс. человек
+- спасено свыше 26 тыс. человек
+:::
 
 
 # Оперативная деятельность {background-color="black" background-image="imgs/operative.jpg" background-size="100%"}
