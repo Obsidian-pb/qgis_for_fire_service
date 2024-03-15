@@ -12,7 +12,7 @@ format:
   revealjs:
     transition: slide
     background-transition: fade
-    theme: serif
+    # theme: serif
 
 # format: pptx
 
@@ -107,7 +107,7 @@ language:
 ::: {.column width="60%"}
 ![](imgs/MalySemyachik.png){width=300px}
 ![](imgs/HopkinsNZ.png){width=300px}
-![](imgs/KRSK_buildings.png)
+![](imgs/KRSK_buildings.jpg)
 :::
 
 ::::
@@ -144,24 +144,84 @@ language:
 
 ## Планшеты и карты водоисточников
 
-## Карты районов выезда
+::: {.r-stack}
+![](imgs/planshet_example.jpg){.fragment height="550"}
 
-## Диспетчеризация подразделений
+![](imgs/inppwTable_example.jpg){.fragment height="400"}
 
-## Учет пожаров мест пожаров
+![](imgs/output_6.jpg){.fragment height="550"}
+:::
 
+## Карты районов выезда 
+
+![](imgs/district_map.jpg){.absolute top=60}
+
+## Диспетчеризация подразделений {.smaller}
+
+:::: {.columns}
+
+::: {.column width="60%"}
+![](imgs/routes.png)
+:::
+
+::: {.column width="40%"}
+| № п/п | ПСЧ | время, мин |
+|---:|:----------|-----:|
+|  6 | ПСЧ-17    |  7.4 |
+|  1 | ПСЧ-2     | 14.5 |
+|  3 | ПСЧ-4     | 19.2 |
+| 10 | СПСЧ      | 19.9 |
+|  4 | ПСЧ-8     | 21.8 |
+|  0 | ПСЧ-1     | 22.3 |
+|  7 | ПСЧ-19    | 28.9 |
+|  9 | ОП ПСЧ-20 | 31   |
+|  8 | ПСЧ-20    | 32.7 |
+|  2 | ПСЧ-3     | 34.7 |
+|  5 | ПСЧ-10    | 35.9 |
+| 11 | ПСЧ-5     | 40.8 |
+:::
+
+::::
+
+## Учет мест пожаров
+
+![](imgs/fires.png)
 
 
 
 # Задачи системы управления {background-color="black" background-image="imgs/management.jpg" background-size="100%"}
 
 ## Определение границ районов выезда
+::: {layout-ncol=2}
+![](imgs/ride_areas.png){fig-align="center"}
+
+![](imgs/ip.jpg){fig-align="center"}
+:::
 
 ## Определение мест размещения пожарных подразделений
+::: {layout-ncol=2}
+![](imgs/unit_place_eample.png){fig-align="center"}
+
+![](imgs/vladimir.png){fig-align="center"}
+:::
+
+## Анализ особенностей застройки территории
+![](imgs/zastroika.png){fig-align="center"}
+
 
 ## Анализ обеспеченности водоисточниками
+![](imgs/waterless_areas.png){fig-align="center"}
 
-## Анализ плотности и последствий пожаров
+
+## Анализ плотности и параметров пожаров
+::: {layout-ncol=2}
+![](imgs/fires_density.png){fig-align="center"}
+
+![](imgs/times_mean.png){fig-align="center"}
+:::
+
+## Анализ динамики параметров пожаров
+![](imgs/diff.jpg){fig-align="center"}
 
 
 
@@ -182,6 +242,13 @@ language:
 
 
 # Проблемы
+
+## Техническое обеспечение
+
+* Геокодирование (отсутствие баз данных адресов)
+* Отсутствие баз данных зданий и сооружений
+* Отсутствие баз данных топологии дорожных сетей городов на территории России
+* Отсутствие данных о населении и т.д.
 
 ## Обученность личного состава
 
