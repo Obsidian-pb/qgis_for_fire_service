@@ -3,7 +3,7 @@ project:
 
 book:
   title: "QGIS для пожарных подразделений"
-  author: "ФИО"
+  author: "Шамсудинов Г.Ю., Морозов В.В., Малютин О.С."
   date: today
   chapters:
     - index.qmd
