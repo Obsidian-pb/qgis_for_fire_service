@@ -2,7 +2,7 @@ project:
   type: book
 
 book:
-  title: "QGIS для пожарных подразделений"
+  title: "ГИС для пожарных подразделений"
   author: "Шамсудинов Г.Ю., Морозов В.В., Малютин О.С."
   date: today
   chapters:
@@ -17,8 +17,8 @@ book:
         - about_qgis/qgis_importexport.qmd
     - part: fire_main.qmd
       chapters: 
-        - fire_main/fm_inppw.qmd
         - fire_main/fm_inppw_planshets.qmd
+        - fire_main/fm_inppw.qmd
         - fire_main/fm_ride_maps.qmd
     - part: garrysons.qmd
       chapters: 
