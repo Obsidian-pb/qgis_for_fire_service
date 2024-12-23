@@ -1,41 +1,82 @@
 project:
   type: book
+  preview:
+    port: 7502
 
 book:
   title: "ГИС для пожарных подразделений"
   author: "Шамсудинов Г.Ю., Морозов В.В., Малютин О.С."
   date: today
   chapters:
+    # Предисловие
     - index.qmd
+    # Введение
     - intro.qmd
+
+    # ГИС в деятельности пожарной охраны (где и как применяются)
     - gis_in_fire_service.qmd
-    - part: about_qgis.qmd
-      chapters: 
-        - about_qgis/qgis_basics.qmd
-        - about_qgis/qgis_install.qmd
-        - about_qgis/qgis_layers.qmd
-        - about_qgis/qgis_importexport.qmd
-    - part: fire_main.qmd
-      chapters: 
-        - fire_main/fm_inppw_planshets.qmd
-        - fire_main/fm_inppw.qmd
-        - fire_main/fm_ride_maps.qmd
-    - part: garrysons.qmd
-      chapters: 
-        - garrysons/garry_map.qmd
-        - garrysons/garry_borders.qmd
-        - garrysons/garry_analize.qmd
-    - part: automation.qmd
-      chapters: 
-        - automation/download_OSM_by_osmnx.qmd
+
+    # Раздел 1. Основные сведения о ГИС
+    - part: gis.qmd
+      chapters:
+        ## Обзор программного обеспечения (ПО) ГИС
+        - gis/qis_software.qmd
+        ## Пространственные данные
+        - gis/qis_data.qmd
+        ## Системы координат в ГИС
+        - gis/qis_sk.qmd
+        ## Модели данных: растровая модель данных
+        - gis/qis_rasters.qmd
+        ## Модели данных: векторная модель данных
+        - gis/qis_vectors.qmd
+
+    # # Раздел 2. Основные сведения о NextGIS
+    # - part: about_qgis/about_qgis.qmd
+    #   chapters:
+    #     # Установка QGIS
+    #     - about_qgis/qgis_install.qmd
+    #     - about_qgis/qgis_layers.qmd
+    #     - about_qgis/qgis_importexport.qmd
+
+    # # Раздел 3. ГИС в деятельности пожарной охраны
+    # - part: fire_main/fire_main.qmd
+    #   chapters:
+    #     - fire_main/fm_inppw.qmd
+    #     - fire_main/fm_inppw_planshets.qmd
+    #     - fire_main/fm_ride_maps.qmd
+
+    # Это на будущее
+    # - part: garrysons/garrysons.qmd
+    #   chapters: 
+    #     - garrysons/garry_map.qmd
+    #     - garrysons/garry_borders.qmd
+    #     - garrysons/garry_analize.qmd
+    # - part: automation/automation.qmd
+    #   chapters: 
+    #     - automation/download_OSM_by_osmnx.qmd
+
+    # Заключение
     - summary.qmd
+
+    # Список источников
     - references.qmd
+
 
 format:
   html:
     theme: cosmo
+  docx:
+    fig-align: center
+    lang: ru
+    reference-doc: custom-reference-doc.docx
+    toc: false
 
 
-lang: ru
+csl: gost-r-7-0-5-2008-numeric.csl
 
 bibliography: my_references.bib
+
+crossref:
+  fig-prefix: рис.      # по умолчанию "Figure"
+  tbl-prefix: табл.     # по умолчанию "Table"
+  title-delim: " --"    # разделитель номера и названия рисунка
