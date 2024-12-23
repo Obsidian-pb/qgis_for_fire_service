@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Шамсудинов Г.Ю., Морозов В.В., Малютин О.С.">
-<meta name="dcterms.date" content="2024-12-23">
 
-<title>ГИС для пожарных подразделений</title>
+<title>qgis_importexport</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,215 +23,64 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./intro.html" rel="next">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-8da5b4427184b79ecddefad3d342027e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
-  "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
-  }
-}</script>
+<script src="qgis_importexport_files/libs/clipboard/clipboard.min.js"></script>
+<script src="qgis_importexport_files/libs/quarto-html/quarto.js"></script>
+<script src="qgis_importexport_files/libs/quarto-html/popper.min.js"></script>
+<script src="qgis_importexport_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="qgis_importexport_files/libs/quarto-html/anchor.min.js"></script>
+<link href="qgis_importexport_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="qgis_importexport_files/libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="qgis_importexport_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="qgis_importexport_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="qgis_importexport_files/libs/bootstrap/bootstrap-8a79a254b8e706d3c925cde0a310d4f0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
 
-<body class="nav-sidebar floating">
+<body class="fullcontent">
 
-<div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Предисловие</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
-    </div>
-  </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
-<!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-    <div class="sidebar-title mb-0 py-0">
-      <a href="./">ГИС для пожарных подразделений</a> 
-    </div>
-      </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Предисловие</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Введение</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./gis_in_fire_service.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Использование картографической информации в пожарной охране</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">gis.qmd</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./gis/qis_software.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Обзор программного обеспечения (ПО) ГИС</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./gis/qis_data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Пространственные данные</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./gis/qis_sk.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Системы координат в ГИС</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./gis/qis_rasters.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Модели данных: растровая модель данных</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./gis/qis_vectors.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Модели данных: векторная модель данных</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Заключение</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Ссылки</span></a>
-  </div>
-</li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#предисловие" id="toc-предисловие" class="nav-link active" data-scroll-target="#предисловие">Предисловие</a></li>
-  </ul>
-</nav>
-    </div>
-<!-- main -->
-<main class="content" id="quarto-document-content">
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">ГИС для пожарных подразделений</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Шамсудинов Г.Ю., Морозов В.В., Малютин О.С. </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">December 23, 2024</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="предисловие" class="level1 unnumbered">
-<h1 class="unnumbered">Предисловие</h1>
-<p>В настоящее время, пожарные подразделения сталкиваются с проблемой, связанной с картами. Множество подразделений делают справочник водоисточников и карту района выезда “от руки”. В век информационных технологий, данные действия должны искорениться из подразделений пожарной охраны, в связи с их неудобностью.</p>
-
-
+<section id="импорт-и-экспорт-картографической-информации" class="level1">
+<h1>Импорт и экспорт картографической информации</h1>
+<section id="эскпорт" class="level2">
+<h2 class="anchored" data-anchor-id="эскпорт">Эскпорт</h2>
+<p>Открываем «NextGIS QGIS» и 2 раза нажимаем на «Создать пустой проект.</p>
+<p><img src="pictures/12.png" class="img-fluid"></p>
+<p>Разберёмся как создавать тайловую карту в Nex с помощью OpenStreetMap. Переходим в «Слой» - «Добавить слой» - «Добавить тайловый слой XYZ».</p>
+<p><img src="pictures/9.png" class="img-fluid"></p>
+<p>В открывшемся окне нажимаем на выпадающий список, выбираем «OpenStreetMap» и нажимаем кнопку «Добавить». Закрываем окно.</p>
+<p><img src="pictures/10.png" class="img-fluid"></p>
+<p>Мы добавили тайловую карту всей земной поверхности, с которой мы сможем в будущем взаимодействовать.</p>
+<p><em>Примечание:</em> для добавления карты через OpenStreetMap понадобится интернет-соединение.</p>
+<p>При желании возможно сохранить проект. Переходим в «Проект» - «Сохранить как…» , называем произвольно файл и сохраняем в любое удобное место.</p>
+<p><img src="pictures/11.png" class="img-fluid"></p>
+<p>Мы создали нашу первую карту и можем ею делиться!</p>
+</section>
+<section id="импорт" class="level2">
+<h2 class="anchored" data-anchor-id="импорт">Импорт</h2>
+<p>Разберём пакетный импорт данных. Обычно нам не понадобится работать с водоисточниками с нуля, ведь есть уже созданные базы данных. Мы можем загрузить файл в формате .kml. Создаём новый проект и добавляем векторный слой.</p>
+<p><img src="pictures/13.png" class="img-fluid"></p>
+<p>Далее в открывшемся окне выбираем путь к нашему файлу и нажимаем «Добавить».</p>
+<p><img src="pictures/14.png" class="img-fluid"></p>
+<p><img src="pictures/15.png" class="img-fluid"></p>
+<p>Добавим картографическую подложку через OSM standart.</p>
+<p><img src="pictures/16.png" class="img-fluid"></p>
+<p>Меняем систему координат для более чёткого изображения, для этого нажимаем снизу справа на иконку мира и выбираем систему координат так, чтобы красный квадрат захватывал наше местоположение (синий крест). Нажимаем «Применить» и «ОК».</p>
+<p><img src="pictures/18.png" class="img-fluid"></p>
+<p><img src="pictures/17.png" class="img-fluid"></p>
+<p>Теперь мы можем работать с уже готовой картой и базой данных!</p>
+<p>Далее вы сможете увидеть, как нам понадобится база данных, а именно таблица атрибутов.</p>
+</section>
 </section>
 
-</main> <!-- /main -->
+</main>
+<!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -651,15 +498,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="./intro.html" class="pagination-link" aria-label="Введение">
-        <span class="nav-page-text">Введение</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 
 

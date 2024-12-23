@@ -17,7 +17,7 @@ book:
     - gis_in_fire_service.qmd
 
     # Раздел 1. Основные сведения о ГИС
-    - part: gis.qmd
+    - part: Раздел 1. Основные сведения о ГИС
       chapters:
         ## Обзор программного обеспечения (ПО) ГИС
         - gis/qis_software.qmd
