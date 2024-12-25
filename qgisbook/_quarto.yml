@@ -30,13 +30,18 @@ book:
         ## Модели данных: векторная модель данных
         - gis/qis_vectors.qmd
 
-    # # Раздел 2. Основные сведения о NextGIS
-    # - part: about_qgis/about_qgis.qmd
-    #   chapters:
-    #     # Установка QGIS
-    #     - about_qgis/qgis_install.qmd
-    #     - about_qgis/qgis_layers.qmd
-    #     - about_qgis/qgis_importexport.qmd
+    # Раздел 2. Основные сведения о NextGIS
+    - part: Раздел 2. Основные сведения о Веб ГИС
+      chapters:
+        - nextgis/about_webgis.qmd
+        - nextgis/about_nextgis.qmd
+        - nextgis/nextgis_info.qmd
+    ## Установка QGIS
+    - part: Раздел 3. Подготовка к работе
+      chapters:
+        - about_qgis/qgis_install.qmd
+        - about_qgis/qgis_layers.qmd
+        - about_qgis/qgis_importexport.qmd
 
     # # Раздел 3. ГИС в деятельности пожарной охраны
     # - part: fire_main/fire_main.qmd

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>qgis_importexport</title>
+<title>about_qgis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,16 +23,16 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="qgis_importexport_files/libs/clipboard/clipboard.min.js"></script>
-<script src="qgis_importexport_files/libs/quarto-html/quarto.js"></script>
-<script src="qgis_importexport_files/libs/quarto-html/popper.min.js"></script>
-<script src="qgis_importexport_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="qgis_importexport_files/libs/quarto-html/anchor.min.js"></script>
-<link href="qgis_importexport_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="qgis_importexport_files/libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="qgis_importexport_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="qgis_importexport_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="qgis_importexport_files/libs/bootstrap/bootstrap-8a79a254b8e706d3c925cde0a310d4f0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="about_qgis_files/libs/clipboard/clipboard.min.js"></script>
+<script src="about_qgis_files/libs/quarto-html/quarto.js"></script>
+<script src="about_qgis_files/libs/quarto-html/popper.min.js"></script>
+<script src="about_qgis_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="about_qgis_files/libs/quarto-html/anchor.min.js"></script>
+<link href="about_qgis_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="about_qgis_files/libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="about_qgis_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="about_qgis_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="about_qgis_files/libs/bootstrap/bootstrap-8a79a254b8e706d3c925cde0a310d4f0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -46,37 +46,28 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="импорт-и-экспорт-картографической-информации" class="level1">
-<h1>Импорт и экспорт картографической информации</h1>
-<section id="эскпорт" class="level2">
-<h2 class="anchored" data-anchor-id="эскпорт">Эскпорт</h2>
-<p>Открываем «NextGIS QGIS» и 2 раза нажимаем на «Создать пустой проект.</p>
-<p><img src="pictures/12.png" class="img-fluid"></p>
-<p>Разберёмся как создавать тайловую карту в Nex с помощью OpenStreetMap. Переходим в «Слой» - «Добавить слой» - «Добавить тайловый слой XYZ».</p>
-<p><img src="pictures/9.png" class="img-fluid"></p>
-<p>В открывшемся окне нажимаем на выпадающий список, выбираем «OpenStreetMap» и нажимаем кнопку «Добавить». Закрываем окно.</p>
-<p><img src="pictures/10.png" class="img-fluid"></p>
-<p>Мы добавили тайловую карту всей земной поверхности, с которой мы сможем в будущем взаимодействовать.</p>
-<p><em>Примечание:</em> для добавления карты через OpenStreetMap понадобится интернет-соединение.</p>
-<p>При желании возможно сохранить проект. Переходим в «Проект» - «Сохранить как…» , называем произвольно файл и сохраняем в любое удобное место.</p>
-<p><img src="pictures/11.png" class="img-fluid"></p>
-<p>Мы создали нашу первую карту и можем ею делиться!</p>
-</section>
-<section id="импорт" class="level2">
-<h2 class="anchored" data-anchor-id="импорт">Импорт</h2>
-<p>Разберём пакетный импорт данных. Обычно нам не понадобится работать с водоисточниками с нуля, ведь есть уже созданные базы данных. Мы можем загрузить файл в формате .kml. Создаём новый проект и добавляем векторный слой.</p>
-<p><img src="pictures/13.png" class="img-fluid"></p>
-<p>Далее в открывшемся окне выбираем путь к нашему файлу и нажимаем «Добавить».</p>
-<p><img src="pictures/14.png" class="img-fluid"></p>
-<p><img src="pictures/15.png" class="img-fluid"></p>
-<p>Добавим картографическую подложку через OSM standart.</p>
-<p><img src="pictures/16.png" class="img-fluid"></p>
-<p>Меняем систему координат для более чёткого изображения, для этого нажимаем снизу справа на иконку мира и выбираем систему координат так, чтобы красный квадрат захватывал наше местоположение (синий крест). Нажимаем «Применить» и «ОК».</p>
-<p><img src="pictures/18.png" class="img-fluid"></p>
-<p><img src="pictures/17.png" class="img-fluid"></p>
-<p>Теперь мы можем работать с уже готовой картой и базой данных!</p>
-<p>Далее вы сможете увидеть, как нам понадобится база данных, а именно таблица атрибутов.</p>
-</section>
+<section id="основы-работы-с-qgis-и-nextgis" class="level1">
+<h1>Основы работы с QGIS и NextGIS</h1>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Здесь расширить, больше рассказать о QGIS, показать его удобство, подчеркнуть перспективы его применения.</p>
+</div>
+</div>
+<p><strong>QGIS</strong> – это географическая информационная система с открытым исходным кодом. Проект зародился в мае 2002 года и был создан как проект на SourceForge в июне того же года. В настоящее время QGIS работает на большинстве платформ Unix, Windows и macOS. QGIS разработан с использованием инструментария Qt (https://www.qt.io) и C++. QGIS работает быстро и имеет приятный, простой в использовании графический интерфейс пользователя (GUI).</p>
+<p><strong>NextGIS</strong> — это набор программ для создания тематических геоинформационных систем и сервисов.</p>
+<p>Некоторые продукты платформы:</p>
+<p><strong>NextGIS Web</strong> - Серверное программное обеспечение для хранения, визуализации и управления геоданными, гибкой настройки доступа к данным для пользователей.</p>
+<p><strong>NextGIS QGIS</strong> - Настольная ГИС для создания и редактирования данных, производства карт и выполнения аналитических операций.</p>
+<p><strong>NextGIS Mobile</strong> - Мобильная ГИС, позволяющая создавать, редактировать и выгружать геоданные онлайн и офлайн.</p>
+<p><strong>NextGIS Data</strong> - Актуальные геоданные в разных форматах, удобная структура слоёв, настроенные стили и проекты для ГИС.</p>
 </section>
 
 </main>
