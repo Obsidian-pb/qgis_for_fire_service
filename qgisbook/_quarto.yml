@@ -40,9 +40,8 @@ book:
     - part: Раздел 3. Подготовка к работе
       chapters:
         - about_qgis/qgis_install.qmd
-        - about_qgis/qgis_layers.qmd
+        - about_qgis/qgis_basics.qmd
         - about_qgis/qgis_importexport.qmd
-
     # # Раздел 3. ГИС в деятельности пожарной охраны
     # - part: fire_main/fire_main.qmd
     #   chapters:
