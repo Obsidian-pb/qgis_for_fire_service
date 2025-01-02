@@ -1,3 +1,4 @@
 *.xlsx
 /qgisbook/_book
 /qgisbook/_book/*
+/qgisbook/_book
