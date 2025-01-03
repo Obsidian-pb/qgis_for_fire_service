@@ -1,0 +1,4 @@
+## Анализ границ районов выезда пожарных подразделений
+
+
+![](pictures/ride_area_bounds.jpg){#fig-ride_areas}
